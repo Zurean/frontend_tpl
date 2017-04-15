@@ -1,0 +1,31 @@
+@mixin border-box() {
+	box-sizing: border-box;
+}
+
+@mixin img-resp() {
+	display: inline-block;
+	max-width: 100%;
+}
+
+@mixin flex($hor-align: flex-start, $vert-align: stretch, $row-align: flex-start) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: $hor-align;
+	align-items: $vert-align;
+	align-content: $row-align;
+}
+
+@mixin row($gut: $gutter) {
+	margin-right: -$gut/2;
+	margin-left: -$gut/2;
+}
+@mixin col($num: $columns, $gut: $gutter, $type: '') {
+	@if $type == padding {
+		padding: 0 $gut/2;
+		width: calc( (100% / #{$columns}) * #{$num});
+	}
+	@else {
+		margin: 0 $gut/2;
+		width: calc( (100% / #{$columns}) * #{$num} - #{$gut});
+	}
+}

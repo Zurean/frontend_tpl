@@ -1,0 +1,23 @@
+{
+  "name": "tpl",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "rodel"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "",
+    "svgxuse": "",
+    "jquery.inputmask": "",
+    "fancybox": ""
+  }
+}
